@@ -12,7 +12,7 @@ async function postTheBlogOnHashNode(input){
 
   const token = process.env.HASHNODE_TOKEN;
 
-  input.publicationId = "68012ae262cc8f0f69091325";
+  input.publicationId = process.env.PUBLICATION_ID;
 
   return await publishPost(token, input);
 }
